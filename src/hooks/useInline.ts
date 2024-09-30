@@ -17,7 +17,7 @@ export const inlineKeys = [
 export const setInline = (editorState: EditorState, style: InlineKeys) => {
   return RichUtils.toggleInlineStyle(editorState, style);
 };
-const useInline = (editorState: EditorState, style: InlineKeys) => {
+export const useInline = (editorState: EditorState, style: InlineKeys) => {
   const currentStyle = useMemo(() => {
     try {
       return editorState.getCurrentInlineStyle().has(style);

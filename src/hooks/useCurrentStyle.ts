@@ -1,7 +1,7 @@
 import { EditorState } from 'draft-js';
 import { useMemo } from 'react';
 
-const useCurrentStyle = (editorState: EditorState) => {
+export const useCurrentStyle = (editorState: EditorState) => {
   try {
     const currentStyle = editorState.getCurrentInlineStyle();
     return currentStyle;

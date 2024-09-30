@@ -17,7 +17,7 @@ export const AtomicBlockDivider = withAtomic(() => {
   return <UiDivider />;
 });
 export const DividerBlockName = 'dividerBlock';
-const DividerBlock = ({ onChange, editorState }: BaseProps) => {
+export const DividerBlock = ({ onChange, editorState }: BaseProps) => {
   const { atomic } = useLanguage();
   const onMouseDown = useCallback(() => {
     insertBlock(onChange, editorState, DividerBlockName, {});

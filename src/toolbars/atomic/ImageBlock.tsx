@@ -13,7 +13,7 @@ export const AtomicBlockImage = withAtomic<ImageBlockProps>(() => {
 });
 
 export const ImageBlockName = 'imageBlock';
-const ImageBlock = ({ editorState, onChange }: BaseProps) => {
+export const ImageBlock = ({ editorState, onChange }: BaseProps) => {
   const { atomic } = useLanguage();
   useEffect(() => {
     //从剪切板粘贴图片

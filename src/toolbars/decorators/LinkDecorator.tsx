@@ -6,7 +6,7 @@ const StyledLink = styled('a', {
   color: '#3f51bf',
   cursor: 'pointer',
 });
-const LinkDecorator = withDecorator(
+export const LinkDecorator = withDecorator(
   ({ contentState, children, entityKey }) => {
     const { href, ...rest } = contentState.getEntity(entityKey).getData();
     return (

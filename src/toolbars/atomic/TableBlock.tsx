@@ -15,7 +15,7 @@ export const AtomicBlockTable = withAtomic<TableBlockProps>(() => {
 });
 
 export const TableBlockName = 'tableBlock';
-const TableBlock = ({ editorState, onChange }: BaseProps) => {
+export const TableBlock = ({ editorState, onChange }: BaseProps) => {
   const { atomic } = useLanguage();
   const onMouseDown = useCallback(() => {
     insertBlock(onChange, editorState, TableBlockName, {

@@ -6,7 +6,7 @@ const languages: {
 } = {
   zh,
 };
-const useLanguage = () => {
+export const useLanguage = () => {
   const context = useContext(RichEditorContext);
   return languages[context.language];
 };

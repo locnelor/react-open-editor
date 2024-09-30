@@ -9,7 +9,7 @@ import {
 } from 'react-open-rich-editor';
 import { UiButtonGroupItem } from '../../components/UiButton';
 
-const withBlock = (block: BlockKeys) => {
+export const withBlock = (block: BlockKeys) => {
   const Block = ({ editorState, onChange }: BaseProps) => {
     const language = useLanguage();
 

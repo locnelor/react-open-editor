@@ -42,7 +42,7 @@ export const AtomicBlockCode = withAtomic<CodeBlockProps>(
   },
 );
 export const CodeBlockName = 'codeBlock';
-const CodeBlock = ({ editorState, onChange }: BaseProps) => {
+export const CodeBlock = ({ editorState, onChange }: BaseProps) => {
   const { atomic } = useLanguage();
   const onMouseDown = useCallback(() => {
     insertBlock(onChange, editorState, CodeBlockName, {

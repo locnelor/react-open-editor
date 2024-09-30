@@ -41,7 +41,7 @@ const toolbars = [
   [DividerBlock, CodeBlock, ImageBlock, MathBlock, TableBlock],
 ];
 //代码、图片、表格、数学
-const ToolbarDemo = ({ editorState, onChange }: BaseProps) => {
+export const Toolbar = ({ editorState, onChange }: BaseProps) => {
   return (
     <UiToolbar>
       {toolbars.map((value, key) => {
@@ -62,4 +62,4 @@ const ToolbarDemo = ({ editorState, onChange }: BaseProps) => {
   );
 };
 
-export default ToolbarDemo;
+export default Toolbar;

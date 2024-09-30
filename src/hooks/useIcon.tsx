@@ -26,7 +26,7 @@ const IconMap = {
   'unordered-list-item': <ListTwo />,
 };
 
-const useIcon = (key: keyof typeof IconMap) => {
+export const useIcon = (key: keyof typeof IconMap) => {
   return IconMap[key];
 };
 export default useIcon;

@@ -27,7 +27,7 @@ export const blockKeys = [
 export const setBlock = (editorState: EditorState, blockType: BlockKeys) => {
   return RichUtils.toggleBlockType(editorState, blockType);
 };
-const useBlock = (editorState: EditorState, style: BlockKeys) => {
+export const useBlock = (editorState: EditorState, style: BlockKeys) => {
   const currentBlockType = useMemo(() => {
     try {
       const selection = editorState.getSelection();

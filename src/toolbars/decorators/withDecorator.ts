@@ -9,7 +9,7 @@ type DecoratorProps = {
   entityKey: string;
 };
 
-const withDecorator = (
+export const withDecorator = (
   component: React.FC<DecoratorProps>,
   strategy: (
     block: ContentBlock,

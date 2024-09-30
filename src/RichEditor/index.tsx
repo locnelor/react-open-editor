@@ -27,7 +27,7 @@ export type RichEditorProps = {
 };
 export type RichEditorType = (props: RichEditorProps) => React.JSX.Element;
 
-const RichEditor: RichEditorType = ({
+export const RichEditor: RichEditorType = ({
   editorState,
   onChange,
   readOnly = false,
@@ -139,4 +139,3 @@ const RichEditor: RichEditorType = ({
     />
   );
 };
-export default RichEditor;

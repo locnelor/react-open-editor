@@ -4,7 +4,7 @@ export type BaseProps<T = any> = {
   onChange: (editorState: EditorState) => void;
 } & T;
 
-export { default as RichEditor } from './RichEditor';
+export * from './RichEditor';
 export type { RichEditorProps, RichEditorType } from './RichEditor';
 export {
   RichEditorConsumer,
@@ -19,49 +19,28 @@ export {
   insertText,
   mergeBlock,
   setBlock,
-  default as useBlock,
+  useBlock,
 } from './hooks/useBlock';
-export {
-  useCurrentColor,
-  default as useCurrentStyle,
-} from './hooks/useCurrentStyle';
-export { default as useEditorState } from './hooks/useEditorState';
-export { default as useIcon } from './hooks/useIcon';
-export { inlineKeys, setInline, default as useInline } from './hooks/useInline';
-export { default as useLanguage } from './hooks/useLanguage';
-export { default as withBlock } from './toolbars/block/withBlock';
-export { default as LinkDecorator } from './toolbars/decorators/LinkDecorator';
-export { default as withDecorator } from './toolbars/decorators/withDecorator';
+export { useCurrentColor, useCurrentStyle } from './hooks/useCurrentStyle';
+export { useEditorState } from './hooks/useEditorState';
+export { useIcon } from './hooks/useIcon';
+export { inlineKeys, setInline, useInline } from './hooks/useInline';
+export { useLanguage } from './hooks/useLanguage';
+export { withBlock } from './toolbars/block/withBlock';
+export { LinkDecorator } from './toolbars/decorators/LinkDecorator';
+export { withDecorator } from './toolbars/decorators/withDecorator';
 
-export {
-  AtomicBlockCode,
-  default as CodeBlock,
-  CodeBlockName,
-} from './toolbars/atomic/CodeBlock';
+export * from './toolbars/atomic/CodeBlock';
 
-export {
-  AtomicBlockImage,
-  default as ImageBlock,
-  ImageBlockName,
-} from './toolbars/atomic/ImageBlock';
+export * from './toolbars/atomic/ImageBlock';
 
-export {
-  AtomicBlockDivider,
-  default as DividerBlock,
-  DividerBlockName,
-} from './toolbars/atomic/DividerBlock';
+export * from './toolbars/atomic/DividerBlock';
 
-export {
-  AtomicBlockMath,
-  default as MathBlock,
-  MathBlockName,
-} from './toolbars/atomic/MathBlock';
+export * from './toolbars/atomic/MathBlock';
 
-export {
-  AtomicBlockTable,
-  default as TableBlock,
-  TableBlockName,
-} from './toolbars/atomic/TableBlock';
+export * from './toolbars/atomic/TableBlock';
+
+export * from './toolbars';
 
 export type { BlockKeys } from './hooks/useBlock';
 export type { InlineKeys } from './hooks/useInline';

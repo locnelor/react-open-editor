@@ -13,7 +13,7 @@ export const AtomicBlockMath = withAtomic<MathBlockProps>(() => {
 });
 
 export const MathBlockName = 'mathBlock';
-const MathBlock = ({ editorState, onChange }: BaseProps) => {
+export const MathBlock = ({ editorState, onChange }: BaseProps) => {
   const { atomic } = useLanguage();
   const onMouseDown = useCallback(() => {
     insertBlock(onChange, editorState, MathBlockName, {
