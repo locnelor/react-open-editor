@@ -66,5 +66,5 @@ export {
 export type { BlockKeys } from './hooks/useBlock';
 export type { InlineKeys } from './hooks/useInline';
 
-import OpenRithEditor from './OpenRithEditor';
-export default OpenRithEditor;
+import ReactOpenRithEditor from './ReactOpenRithEditor';
+export default ReactOpenRithEditor;
