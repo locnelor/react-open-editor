@@ -1,7 +1,6 @@
 import React, { useCallback } from 'react';
-import { BaseProps } from 'react-open-rich-editor';
 import { UiButtonGroupItem } from '../../components/UiButton';
-
+import { BaseProps } from '../../type';
 const headingMap = {
   'header-one': 'H1',
   'header-two': 'H2',

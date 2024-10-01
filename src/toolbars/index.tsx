@@ -1,17 +1,15 @@
 import { BackgroundColor, Text } from '@icon-park/react';
 import React from 'react';
-import {
-  BaseProps,
-  CodeBlock,
-  DividerBlock,
-  ImageBlock,
-  MathBlock,
-  TableBlock,
-  blockKeys,
-  inlineKeys,
-} from 'react-open-rich-editor';
 import { UiButtonGroup } from '../components/UiButton';
 import UiToolbar, { UiToolbarSeparator } from '../components/UiToolbar';
+import { blockKeys } from '../hooks/useBlock';
+import { inlineKeys } from '../hooks/useInline';
+import { BaseProps } from '../type';
+import CodeBlock from './atomic/CodeBlock';
+import DividerBlock from './atomic/DividerBlock';
+import ImageBlock from './atomic/ImageBlock';
+import MathBlock from './atomic/MathBlock';
+import TableBlock from './atomic/TableBlock';
 import withBlock from './block/withBlock';
 import ColorInline from './inline/ColorInline';
 import LinkInline from './inline/LinkInline';

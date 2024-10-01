@@ -12,7 +12,7 @@ import {
 } from '@radix-ui/react-alert-dialog';
 import { keyframes, styled } from '@stitches/react';
 import React, { PropsWithChildren, ReactNode, useMemo } from 'react';
-import useLanguage from 'react-open-rich-editor/hooks/useLanguage';
+import useLanguage from '../hooks/useLanguage';
 
 const UiDialogTrigger = AlertDialogTrigger;
 const UiDialogPortal = AlertDialogPortal;

@@ -1,13 +1,11 @@
 import { Code } from '@icon-park/react';
 import React, { useCallback, useContext } from 'react';
-import {
-  BaseProps,
-  RichEditorContext,
-  insertBlock,
-  useLanguage,
-} from 'react-open-rich-editor';
-import { UiButtonGroupItem } from 'react-open-rich-editor/components/UiButton';
 import CodeRender from '../../components/CodeRender';
+import { UiButtonGroupItem } from '../../components/UiButton';
+import { insertBlock } from '../../hooks/useBlock';
+import useLanguage from '../../hooks/useLanguage';
+import { RichEditorContext } from '../../libs/provider';
+import { BaseProps } from '../../type';
 import withAtomic from './withAtomic';
 
 export type CodeBlockProps = {

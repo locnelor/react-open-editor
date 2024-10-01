@@ -3,9 +3,9 @@ import { mauve, violet } from '@radix-ui/colors';
 import { styled } from '@stitches/react';
 import { EditorState, Modifier } from 'draft-js';
 import React, { useCallback, useState } from 'react';
-import { BaseProps } from 'react-open-rich-editor';
 import UiButton, { UiButtonGroupItem } from '../../components/UiButton';
 import UiPopover from '../../components/UiPopover';
+import { BaseProps } from '../../type';
 
 const Text = styled('p', {
   margin: 0,

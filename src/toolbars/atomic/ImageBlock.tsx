@@ -1,8 +1,8 @@
 import { Pic } from '@icon-park/react';
 import React, { useCallback, useEffect } from 'react';
-import { BaseProps } from 'react-open-rich-editor';
-import { UiButtonGroupItem } from 'react-open-rich-editor/components/UiButton';
-import useLanguage from 'react-open-rich-editor/hooks/useLanguage';
+import { UiButtonGroupItem } from '../../components/UiButton';
+import useLanguage from '../../hooks/useLanguage';
+import { BaseProps } from '../../type';
 import withAtomic from './withAtomic';
 
 export type ImageBlockProps = {

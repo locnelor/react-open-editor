@@ -1,6 +1,6 @@
 import { CompositeDecorator, EditorState } from 'draft-js';
 import { useCallback, useState } from 'react';
-import { LinkDecorator } from 'react-open-rich-editor';
+import LinkDecorator from '../toolbars/decorators/LinkDecorator';
 
 export const useEditorState = () => {
   const [editorState, setEditorState] = useState<EditorState>(

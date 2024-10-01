@@ -1,8 +1,9 @@
 import { Formula } from '@icon-park/react';
 import React, { useCallback } from 'react';
-import { BaseProps, insertBlock } from 'react-open-rich-editor';
-import { UiButtonGroupItem } from 'react-open-rich-editor/components/UiButton';
-import useLanguage from 'react-open-rich-editor/hooks/useLanguage';
+import { UiButtonGroupItem } from '../../components/UiButton';
+import { insertBlock } from '../../hooks/useBlock';
+import useLanguage from '../../hooks/useLanguage';
+import { BaseProps } from '../../type';
 import withAtomic from './withAtomic';
 
 export type MathBlockProps = {

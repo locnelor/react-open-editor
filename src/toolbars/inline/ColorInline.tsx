@@ -1,9 +1,10 @@
 import { styled } from '@stitches/react';
 import { RichUtils } from 'draft-js';
 import React, { useCallback, useMemo } from 'react';
-import { BaseProps, useCurrentColor } from 'react-open-rich-editor';
 import { UiButtonGroupItem } from '../../components/UiButton';
 import UiPopover from '../../components/UiPopover';
+import { useCurrentColor } from '../../hooks/useCurrentStyle';
+import { BaseProps } from '../../type';
 const colorList = [
   [
     'none',

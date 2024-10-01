@@ -6,19 +6,21 @@ import React, {
   useEffect,
   useRef,
 } from 'react';
-import {
-  AtomicBlockCode,
-  AtomicBlockDivider,
-  AtomicBlockImage,
-  AtomicBlockMath,
-  AtomicBlockTable,
-  CodeBlockName,
-  DividerBlockName,
-  ImageBlockName,
-  MathBlockName,
-  TableBlockName,
-} from 'react-open-rich-editor';
 import { RichEditorContext } from '../libs/provider';
+import { AtomicBlockCode, CodeBlockName } from '../toolbars/atomic/CodeBlock';
+import {
+  AtomicBlockDivider,
+  DividerBlockName,
+} from '../toolbars/atomic/DividerBlock';
+import {
+  AtomicBlockImage,
+  ImageBlockName,
+} from '../toolbars/atomic/ImageBlock';
+import { AtomicBlockMath, MathBlockName } from '../toolbars/atomic/MathBlock';
+import {
+  AtomicBlockTable,
+  TableBlockName,
+} from '../toolbars/atomic/TableBlock';
 
 export type RichEditorProps = {
   editorState: EditorState;
