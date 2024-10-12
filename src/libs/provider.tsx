@@ -65,6 +65,7 @@ export const RichEditorDefaultContext = {
       },
     }),
   ),
+  beforeUploadImage: async (file: File) => file,
 };
 type OpenModalProps = PropsWithChildren<{
   title?: string;

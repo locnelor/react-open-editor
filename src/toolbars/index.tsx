@@ -1,6 +1,7 @@
 import { BackgroundColor, Text } from '@icon-park/react';
+import { EditorState } from 'draft-js';
 import React from 'react';
-import { UiButtonGroup } from '../components/UiButton';
+import { UiButtonGroup, UiButtonGroupItem } from '../components/UiButton';
 import UiToolbar, { UiToolbarSeparator } from '../components/UiToolbar';
 import { blockKeys } from '../hooks/useBlock';
 import { inlineKeys } from '../hooks/useInline';
@@ -39,7 +40,11 @@ const toolbars = [
   [DividerBlock, CodeBlock, ImageBlock, MathBlock, TableBlock],
 ];
 //代码、图片、表格、数学
-export const Toolbar = ({ editorState, onChange }: BaseProps) => {
+
+export interface ToolbarProps extends BaseProps {
+  onSave?: (editorState: EditorState) => void;
+}
+export const Toolbar = ({ editorState, onChange, onSave }: ToolbarProps) => {
   return (
     <UiToolbar>
       {toolbars.map((value, key) => {
@@ -56,6 +61,18 @@ export const Toolbar = ({ editorState, onChange }: BaseProps) => {
           </UiButtonGroup>
         );
       })}
+      {!!onSave && (
+        <UiButtonGroup type="single">
+          <UiButtonGroupItem
+            value="Divider"
+            onMouseDown={() => {
+              onSave(editorState);
+            }}
+          >
+            保存
+          </UiButtonGroupItem>
+        </UiButtonGroup>
+      )}
     </UiToolbar>
   );
 };
